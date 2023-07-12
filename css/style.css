@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* border: 1px solid red; */
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* img{
+    width: 100%;
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgray;
+    height: 80px;
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+
+}
+
+.left-nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0 0 0 30px;
+}
+
+.left-nav ul li{
+    height: 100%;
+    position: relative;
+    color : lightgray;
+}
+
+.left-nav li:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    border-radius: 10px;
+    display: block;
+    background-color: orange;
+    width: 100%;
+    height: 5px;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.compte img{
+    width: 40px;
+}
+
+.compte img:hover {
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+
+.panier button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.main-left img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.big-image{
+    margin-bottom: 35px;
+}
+
+.selection-images {
+    display: flex;
+    width: 20%;
+    gap: 34%;
+}
+
+.main-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 60px auto 0;
+}
+
+.description h3{
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.description h1{
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+}
+
+.description p{
+    color: gray;
+    font-size: 1.2rem;
+    line-height: 25px;
+    margin-bottom: 30px;
+<<<<<<< HEAD
+}
+
+.selection-images {
+    width: 100%;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.option-image {
+    cursor: pointer;
+}
+
+.option-image img {
+    width: 100%;
+}
+
+.active {
+    border: 1px solid red;
+=======
+>>>>>>> parent of 042f993 (add buttons)
+}
