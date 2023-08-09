@@ -70,6 +70,10 @@ nav {
     border-radius: 50%;
 }
 
+.panier {
+    position: relative;
+}
+
 .panier button {
     background: none;
     border: none;
@@ -98,6 +102,7 @@ main {
 
 .big-image{
     margin-bottom: 35px;
+    cursor: pointer;
 }
 
 .selection-images {
@@ -128,7 +133,6 @@ main {
     font-size: 1.2rem;
     line-height: 25px;
     margin-bottom: 30px;
-<<<<<<< HEAD
 }
 
 .selection-images {
@@ -137,21 +141,125 @@ main {
 
 .options {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 15px;
 }
 
-.option-image {
+.active {
+    border: 3px solid orange;
+    border-radius: 15px;
+}
+
+.active img {
+    opacity: 0.5;
+}
+
+.options-image img {
+    height: 100%;
+}
+
+.modal{
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;  
+    position: fixed;
+    z-index: 1;  
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    margin: 10% auto;
+    max-width: 700px;
+    width: 85%;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    font-size: 2rem;
     cursor: pointer;
 }
 
-.option-image img {
-    width: 100%;
+.leftBtn, .rightBtn {
+    position: absolute;
+    padding: 15px 20px;
+    border-radius: 50%;
+    top: 50%;
+    background: #F4F4F4;
+    cursor: pointer;
 }
 
-.active {
-    border: 1px solid red;
-=======
->>>>>>> parent of 042f993 (add buttons)
+.leftBtn {
+    left: -25px;
+}
+
+.rightBtn {
+    right: -25px;
+}
+
+.panier-modal {
+    display: none;
+    /* display: flex; */
+    position: fixed;
+    z-index: 1;  
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.panier-containeur {
+    background: #F4F4F4;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    top: 70px;
+    left: 75%;
+}
+
+
+/* Boutton acheter */
+
+.action {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 25%;
+}
+
+.numbers {
+    display: flex;
+    gap: 5px;
+    margin: 5px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.numbers button {
+    padding: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0 10px;
 }

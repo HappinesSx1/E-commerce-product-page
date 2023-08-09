@@ -41,8 +41,14 @@
       <div class="panier">
         <button>
           <img src="./images/icon-cart.svg" alt="cart icone">
+        </button>
+        <div class="panier-modal" id="modalpan">
+          <div class="panier-containeur">
+            <p>Votre panier :</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis obcaecati nisi similique doloremque error corrupti ipsam officiis aspernatur sapiente hic!</p>
+          </div>
+        </div>
       </div>
-      </button>
       <div class="compte"><img src="./images/image-avatar.png" alt="Avatar image"></div>
     </div>
   </nav>
@@ -50,11 +56,11 @@
   <main>
     <div class="main-left">
       <div class="big-image">
-        <img src="./images/image-product-1.jpg" alt="main object" class="big-image-big">
+        <img src="./images/image-product-1.jpg" alt="main object" class="principal-image">
       </div>
       <div class="selection-images">
         <div class="options">
-          <span class="option-image">
+          <span class="option-image active">
             <img src="./images/image-product-1-thumbnail.jpg" alt="">
           </span>
           <span class="option-image">
@@ -91,6 +97,14 @@
         </button>
       </div>
     </div>
+    <div id="simpleModal" class="modal">
+      <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <span class="leftBtn"><</span>
+        <span class="rightBtn">></span>
+        <img src="./images/image-product-1.jpg" alt="" id="modal-image">
+      </div>
+    </div>
   </main>
   <!--
   50%
@@ -103,11 +117,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">HappinesS</a>.
   </div> -->
-<<<<<<< HEAD
 
   <script src="./index.js"></script>
-=======
->>>>>>> parent of 042f993 (add buttons)
 </body>
 
 </html>
